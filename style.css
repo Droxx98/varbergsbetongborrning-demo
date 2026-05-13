@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  color: #1c1917;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Syne', system-ui, sans-serif;
+}
+
+.hero-clip {
+  clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+}
+
+@keyframes spin-slow { to { transform: rotate(360deg); } }
+.drill-spin { animation: spin-slow 8s linear infinite; }
+
+.service-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.stat-num {
+  font-family: 'Syne', system-ui, sans-serif;
+  font-weight: 800;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.breadcrumb a:hover { color: #2563eb; }
+
+.project-card .overlay {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.project-card:hover .overlay { opacity: 1; }
+
+/* Phosphor icon sizing helpers */
+.ph-icon-sm i { font-size: 1.25rem; }
+.ph-icon-md i { font-size: 1.5rem; }
+.ph-icon-lg i { font-size: 2rem; }

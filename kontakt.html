@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt & Offert – Varbergs Betongborrning AB | Ring 0340-123 45</title>
+  <meta name="description" content="Kontakta Varbergs Betongborrning AB för kostnadsfri offert på betongborrning, skärning och håltagning. Ring 0340-123 45 eller fyll i formuläret. Svar inom 2 timmar.">
+  <link rel="canonical" href="https://www.varbergsbetongborrning.se/kontakt">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Kontakt – Varbergs Betongborrning AB",
+    "url": "https://www.varbergsbetongborrning.se/kontakt",
+    "mainEntity": { "@id": "https://www.varbergsbetongborrning.se/#business" }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Hem", "item": "https://www.varbergsbetongborrning.se/" },
+      { "@type": "ListItem", "position": 2, "name": "Kontakt", "item": "https://www.varbergsbetongborrning.se/kontakt" }
+    ]
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            heading: ['Syne', 'system-ui', 'sans-serif'],
+            body: ['DM Sans', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="bg-white font-body">
+
+  <!-- NAV -->
+  <nav x-data="{ open: false }" class="fixed w-full z-50 bg-stone-950/95 backdrop-blur-sm border-b border-stone-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-3">
+          <div class="w-8 h-8 bg-blue-600 rounded flex items-center justify-center flex-shrink-0">
+            <i class="ph-bold ph-circle-dashed text-white drill-spin" style="font-size:1rem"></i>
+          </div>
+          <div class="leading-tight">
+            <span class="text-white font-bold text-sm block font-heading">Varbergs Betongborrning</span>
+            <span class="text-blue-400 text-[9px] font-semibold tracking-widest uppercase">Aktiebolag</span>
+          </div>
+        </a>
+        <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+          <a href="index.html" class="text-stone-400 hover:text-white transition-colors">Hem</a>
+          <a href="tjanster.html" class="text-stone-400 hover:text-white transition-colors">Tjänster</a>
+          <a href="projekt.html" class="text-stone-400 hover:text-white transition-colors">Projekt</a>
+          <a href="om-oss.html" class="text-stone-400 hover:text-white transition-colors">Om oss</a>
+          <a href="faq.html" class="text-stone-400 hover:text-white transition-colors">FAQ</a>
+          <a href="kontakt.html" class="bg-blue-600 text-white px-5 py-2 rounded-md font-semibold">Kontakt</a>
+        </div>
+        <button @click="open = !open" class="md:hidden text-stone-400 hover:text-white p-1">
+          <i x-show="!open" class="ph-bold ph-list text-xl"></i>
+          <i x-show="open" class="ph-bold ph-x text-xl" style="display:none"></i>
+        </button>
+      </div>
+    </div>
+    <div x-show="open" class="md:hidden bg-stone-950 border-t border-stone-800 px-4 py-4 flex flex-col gap-3 text-sm" style="display:none">
+      <a href="index.html" class="text-stone-400 hover:text-white py-1">Hem</a>
+      <a href="tjanster.html" class="text-stone-400 hover:text-white py-1">Tjänster</a>
+      <a href="projekt.html" class="text-stone-400 hover:text-white py-1">Projekt</a>
+      <a href="om-oss.html" class="text-stone-400 hover:text-white py-1">Om oss</a>
+      <a href="faq.html" class="text-stone-400 hover:text-white py-1">FAQ</a>
+      <a href="kontakt.html" class="bg-blue-600 text-white px-4 py-2.5 rounded-md font-semibold text-center mt-1">Kontakta oss</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="bg-stone-950 pt-28 pb-16 px-4">
+    <div class="max-w-7xl mx-auto">
+      <nav class="text-xs text-stone-500 mb-4 breadcrumb">
+        <a href="index.html">Hem</a> <span class="mx-2">/</span> <span class="text-stone-300">Kontakt</span>
+      </nav>
+      <h1 class="font-heading text-4xl sm:text-5xl font-black text-white mb-4">Kontakta <span class="text-blue-400">oss</span></h1>
+      <p class="text-stone-300 text-lg max-w-xl">Berätta vad du behöver hjälp med, vi återkommer med offert inom 2 timmar under vardagar. Inga bindningstider, fast pris.</p>
+    </div>
+  </div>
+
+  <!-- CONTACT GRID -->
+  <section class="py-20 px-4 bg-white">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-5 gap-12">
+
+      <!-- FORM (col-span-3) -->
+      <div class="lg:col-span-3">
+        <h2 class="font-heading font-black text-2xl mb-2">Begär kostnadsfri offert</h2>
+        <p class="text-stone-500 text-sm mb-8">Fyll i formuläret så kontaktar vi dig. Ju mer detaljer du kan ge, desto snabbare kan vi lämna ett exakt pris.</p>
+
+        <form
+          x-data="{ sent: false, sending: false }"
+          @submit.prevent="sending = true; setTimeout(() => { sent = true; sending = false }, 1200)"
+          action="https://formspree.io/f/YOUR_FORM_ID"
+          method="POST"
+          class="space-y-5"
+        >
+          <div x-show="sent" class="bg-blue-50 border border-blue-200 text-blue-900 rounded-xl p-5 text-sm" style="display:none">
+            <strong class="block font-bold mb-1">Tack! Förfrågan mottagen.</strong>
+            Vi återkommer inom 2 timmar (vardagar). Vid brådska ring <a href="tel:034012345" class="underline">0340-123 45</a>.
+          </div>
+
+          <div x-show="!sent">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div>
+                <label class="block text-sm font-semibold text-stone-700 mb-1.5" for="name">Namn <span class="text-blue-600">*</span></label>
+                <input type="text" id="name" name="name" required placeholder="För- och efternamn"
+                  class="w-full border border-stone-300 rounded-lg px-4 py-3 text-sm text-stone-900 placeholder-stone-400 outline-none transition-all">
+              </div>
+              <div>
+                <label class="block text-sm font-semibold text-stone-700 mb-1.5" for="company">Företag</label>
+                <input type="text" id="company" name="company" placeholder="Företagsnamn (om relevant)"
+                  class="w-full border border-stone-300 rounded-lg px-4 py-3 text-sm text-stone-900 placeholder-stone-400 outline-none transition-all">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-5">
+              <div>
+                <label class="block text-sm font-semibold text-stone-700 mb-1.5" for="phone">Telefon <span class="text-blue-600">*</span></label>
+                <input type="tel" id="phone" name="phone" required placeholder="070-XXX XX XX"
+                  class="w-full border border-stone-300 rounded-lg px-4 py-3 text-sm text-stone-900 placeholder-stone-400 outline-none transition-all">
+              </div>
+              <div>
+                <label class="block text-sm font-semibold text-stone-700 mb-1.5" for="email">E-post</label>
+                <input type="email" id="email" name="email" placeholder="din@epost.se"
+                  class="w-full border border-stone-300 rounded-lg px-4 py-3 text-sm text-stone-900 placeholder-stone-400 outline-none transition-all">
+              </div>
+            </div>
+
+            <div class="mt-5">
+              <label class="block text-sm font-semibold text-stone-700 mb-1.5" for="service">Tjänst <span class="text-blue-600">*</span></label>
+              <select id="service" name="service" required
+                class="w-full border border-stone-300 rounded-lg px-4 py-3 text-sm text-stone-700 outline-none transition-all bg-white">
+                <option value="">Välj tjänst...</option>
+                <option>Betongborrning – enstaka hål</option>
+                <option>Betongborrning – flertal hål / systemuppdrag</option>
+                <option>Betongskärning – väggskärning</option>
+                <option>Betongskärning – golvskärning</option>
+                <option>Håltagning – ventilation</option>
+                <option>Håltagning – VVS</option>
+                <option>Håltagning – el / fiber</option>
+                <option>Kontrollerad rivning</option>
+                <option>GPR-scanning (enbart)</option>
+                <option>Undervattensarbeten</option>
+                <option>Vet ej / behöver rådgivning</option>
+              </select>
+            </div>
+
+            <div class="mt-5">
+              <label class="block text-sm font-semibold text-stone-700 mb-1.5" for="location">Adress / ort för uppdraget</label>
+              <input type="text" id="location" name="location" placeholder="T.ex. Centralvägen 5, Varberg"
+                class="w-full border border-stone-300 rounded-lg px-4 py-3 text-sm text-stone-900 placeholder-stone-400 outline-none transition-all">
+            </div>
+
+            <div class="mt-5">
+              <label class="block text-sm font-semibold text-stone-700 mb-1.5" for="message">Beskriv uppdraget <span class="text-blue-600">*</span></label>
+              <textarea id="message" name="message" required rows="5"
+                placeholder="Beskriv vad du behöver: material (betong, tegel m.m.), ungefärlig tjocklek, antal hål, önskad diameter, tidplan m.m. Ju mer detaljer, desto snabbare offert."
+                class="w-full border border-stone-300 rounded-lg px-4 py-3 text-sm text-stone-900 placeholder-stone-400 outline-none transition-all resize-none"></textarea>
+            </div>
+
+            <div class="mt-5">
+              <label class="block text-sm font-semibold text-stone-700 mb-3">Hur brådskande är uppdraget?</label>
+              <div class="flex flex-wrap gap-4">
+                <label class="flex items-center gap-2 cursor-pointer">
+                  <input type="radio" name="urgency" value="normal" checked class="accent-blue-600">
+                  <span class="text-sm text-stone-700">Normal (1 till 2 veckor)</span>
+                </label>
+                <label class="flex items-center gap-2 cursor-pointer">
+                  <input type="radio" name="urgency" value="soon" class="accent-blue-600">
+                  <span class="text-sm text-stone-700">Snart (inom en vecka)</span>
+                </label>
+                <label class="flex items-center gap-2 cursor-pointer">
+                  <input type="radio" name="urgency" value="urgent" class="accent-blue-600">
+                  <span class="text-sm text-stone-700">Akut (&lt; 48 timmar)</span>
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" :disabled="sending"
+              class="mt-8 w-full bg-blue-600 hover:bg-blue-500 disabled:bg-blue-400 text-white py-4 rounded-lg font-bold text-lg transition-colors flex items-center justify-center gap-2">
+              <svg x-show="sending" class="animate-spin w-5 h-5" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"/><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"/></svg>
+              <span x-text="sending ? 'Skickar...' : 'Skicka förfrågan'">Skicka förfrågan</span>
+            </button>
+
+            <p class="text-stone-400 text-xs mt-3 text-center">Vi svarar inom 2 timmar (mån till fre, 07 till 17). Akuta ärenden: 070-123 45 67.</p>
+          </div>
+        </form>
+      </div>
+
+      <!-- CONTACT INFO (col-span-2) -->
+      <div class="lg:col-span-2 space-y-6">
+
+        <!-- Direct contact -->
+        <div class="bg-stone-950 text-white rounded-2xl p-7">
+          <h2 class="font-heading font-bold text-lg mb-5">Direktkontakt</h2>
+          <div class="space-y-4">
+            <a href="tel:034012345" class="flex items-center gap-4 group">
+              <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                <i class="ph-bold ph-phone text-white" style="font-size:1.1rem"></i>
+              </div>
+              <div>
+                <div class="text-xs text-stone-400 uppercase tracking-wider mb-0.5">Telefon (mån till fre, 07 till 17)</div>
+                <div class="text-white font-bold group-hover:text-blue-400 transition-colors">0340-123 45</div>
+              </div>
+            </a>
+            <a href="tel:070-1234567" class="flex items-center gap-4 group">
+              <div class="w-10 h-10 bg-stone-800 rounded-lg flex items-center justify-center flex-shrink-0">
+                <i class="ph-bold ph-phone-call text-blue-400" style="font-size:1.1rem"></i>
+              </div>
+              <div>
+                <div class="text-xs text-stone-400 uppercase tracking-wider mb-0.5">Jour / akut (dygnet runt)</div>
+                <div class="text-white font-bold group-hover:text-blue-400 transition-colors">070-123 45 67</div>
+              </div>
+            </a>
+            <a href="mailto:info@varbergsbetongborrning.se" class="flex items-center gap-4 group">
+              <div class="w-10 h-10 bg-stone-800 rounded-lg flex items-center justify-center flex-shrink-0">
+                <i class="ph-bold ph-envelope text-blue-400" style="font-size:1.1rem"></i>
+              </div>
+              <div>
+                <div class="text-xs text-stone-400 uppercase tracking-wider mb-0.5">E-post</div>
+                <div class="text-white font-bold group-hover:text-blue-400 transition-colors text-sm break-all">info@varbergsbetongborrning.se</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Opening hours -->
+        <div class="bg-stone-50 rounded-2xl p-7 border border-stone-100">
+          <h2 class="font-heading font-bold text-lg mb-4">Öppettider</h2>
+          <div class="space-y-2 text-sm">
+            <div class="flex justify-between items-center py-2 border-b border-stone-200">
+              <span class="text-stone-600">Måndag till fredag</span>
+              <span class="font-semibold">07:00 till 17:00</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b border-stone-200">
+              <span class="text-stone-600">Lördag</span>
+              <span class="text-stone-400">Stängt (jour tillgänglig)</span>
+            </div>
+            <div class="flex justify-between items-center py-2">
+              <span class="text-stone-600">Söndag</span>
+              <span class="text-stone-400">Stängt (jour tillgänglig)</span>
+            </div>
+          </div>
+          <div class="mt-4 bg-blue-50 border border-blue-200 rounded-lg p-3">
+            <p class="text-blue-900 text-xs"><strong>Akutuppdrag:</strong> Ring jourrummet 070-123 45 67 dygnet runt. Vi strävar efter att vara på plats inom 24 timmar.</p>
+          </div>
+        </div>
+
+        <!-- Address -->
+        <div class="bg-stone-50 rounded-2xl p-7 border border-stone-100">
+          <h2 class="font-heading font-bold text-lg mb-4">Besöksadress</h2>
+          <div class="flex items-start gap-3 mb-3">
+            <i class="ph-bold ph-map-pin text-blue-600 mt-0.5" style="font-size:1.1rem"></i>
+            <address class="not-italic text-stone-600 text-sm leading-relaxed">
+              <strong class="text-stone-900 block mb-1">Varbergs Betongborrning AB</strong>
+              Industrivägen 12<br>
+              432 44 Varberg<br>
+              Sverige
+            </address>
+          </div>
+          <p class="text-stone-400 text-xs">Org.nr: 556789-1234 · Innehar F-skattsedel</p>
+          <div class="mt-4 bg-stone-200 rounded-xl h-36 flex items-center justify-center text-stone-400 text-sm">
+            <span>Karta – Industrivägen 12, Varberg</span>
+          </div>
+        </div>
+
+        <!-- Response promise -->
+        <div class="border-2 border-blue-600 rounded-2xl p-6 text-center">
+          <div class="text-4xl font-heading font-black text-blue-600">2h</div>
+          <div class="font-semibold mt-1">Garanterad svarstid</div>
+          <p class="text-stone-500 text-xs mt-2">Vi svarar på alla offertförfrågningar inom 2 timmar under vardagar. Alltid.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE AREA -->
+  <section class="py-16 px-4 bg-stone-50 border-t border-stone-100">
+    <div class="max-w-7xl mx-auto text-center">
+      <h2 class="font-heading text-2xl font-bold mb-3">Vi utför uppdrag i hela <span class="text-blue-600">Halland</span></h2>
+      <p class="text-stone-500 text-sm mb-8 max-w-2xl mx-auto">Baserade i Varberg med snabb täckning i hela Halland. Resekostnad tillkommer utanför Hallands gränser och specificeras alltid i offerten.</p>
+      <div class="flex flex-wrap justify-center gap-3 text-sm">
+        <span class="bg-white border border-stone-200 px-4 py-2 font-medium shadow-sm">Varberg</span>
+        <span class="bg-white border border-stone-200 px-4 py-2 font-medium shadow-sm">Kungsbacka</span>
+        <span class="bg-white border border-stone-200 px-4 py-2 font-medium shadow-sm">Falkenberg</span>
+        <span class="bg-white border border-stone-200 px-4 py-2 font-medium shadow-sm">Halmstad</span>
+        <span class="bg-white border border-stone-200 px-4 py-2 font-medium shadow-sm">Laholm</span>
+        <span class="bg-white border border-stone-200 px-4 py-2 font-medium shadow-sm">Göteborg</span>
+        <span class="bg-white border border-stone-200 px-4 py-2 font-medium shadow-sm">Mölndal</span>
+        <span class="bg-white border border-stone-200 px-4 py-2 font-medium shadow-sm">Borås</span>
+        <span class="bg-blue-600 text-white px-4 py-2 font-semibold shadow-sm">Hela Halland</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-stone-950 text-stone-400 pt-16 pb-8 px-4">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+      <div class="lg:col-span-2">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-8 h-8 bg-blue-600 rounded flex items-center justify-center flex-shrink-0">
+            <i class="ph-bold ph-circle-dashed text-white" style="font-size:1rem"></i>
+          </div>
+          <span class="text-white font-bold font-heading">Varbergs Betongborrning AB</span>
+        </div>
+        <p class="text-sm leading-relaxed max-w-xs">Certifierade specialister på betongborrning, betongskärning och håltagning. Verksamma i Varberg och hela Halland sedan 2008.</p>
+        <p class="text-xs mt-4 text-stone-600">Org.nr: 556789-1234 · F-skattsedel · Kollektivavtal</p>
+      </div>
+      <div>
+        <h3 class="text-white text-xs font-semibold uppercase tracking-widest mb-4">Tjänster</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="tjanster.html#borrning" class="hover:text-blue-400 transition-colors">Betongborrning</a></li>
+          <li><a href="tjanster.html#skarning" class="hover:text-blue-400 transition-colors">Betongskärning</a></li>
+          <li><a href="tjanster.html#halttagning" class="hover:text-blue-400 transition-colors">Håltagning</a></li>
+          <li><a href="tjanster.html#rivning" class="hover:text-blue-400 transition-colors">Rivning</a></li>
+          <li><a href="tjanster.html#scanning" class="hover:text-blue-400 transition-colors">GPR-scanning</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-white text-xs font-semibold uppercase tracking-widest mb-4">Kontakt</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="tel:034012345" class="hover:text-blue-400 transition-colors">0340-123 45</a></li>
+          <li><a href="tel:070-1234567" class="hover:text-blue-400 transition-colors">070-123 45 67 (jour)</a></li>
+          <li><a href="mailto:info@varbergsbetongborrning.se" class="hover:text-blue-400 transition-colors break-all">info@varbergsbetongborrning.se</a></li>
+          <li class="text-stone-500 text-xs leading-relaxed pt-2">Industrivägen 12<br>432 44 Varberg<br>Mån till Fre, 07:00 till 17:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto pt-6 border-t border-stone-800 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-stone-600">
+      <p>© 2025 Varbergs Betongborrning AB. Alla rättigheter förbehållna.</p>
+      <div class="flex gap-4">
+        <a href="#" class="hover:text-stone-400 transition-colors">Integritetspolicy</a>
+        <a href="sitemap.xml" class="hover:text-stone-400 transition-colors">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

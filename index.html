@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Varbergs Betongborrning AB – Proffs på betongborrning i Varberg och Halland</title>
+  <meta name="description" content="Varbergs Betongborrning AB erbjuder professionell betongborrning, betongskärning och håltagning i Varberg, Halland och södra Sverige. Certifierade fackmän sedan 2008. Begär offert idag.">
+  <meta name="keywords" content="betongborrning Varberg, betongskärning Halland, håltagning betong, diamantborrning Varberg, betongarbeten Halland">
+  <link rel="canonical" href="https://www.varbergsbetongborrning.se/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Varbergs Betongborrning AB – Proffs på betongborrning i Varberg">
+  <meta property="og:description" content="Certifierade specialister på betongborrning, betongskärning och håltagning. Verksamma i Varberg och hela Halland sedan 2008.">
+  <meta property="og:url" content="https://www.varbergsbetongborrning.se/">
+  <meta property="og:locale" content="sv_SE">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
+    "@id": "https://www.varbergsbetongborrning.se/#business",
+    "name": "Varbergs Betongborrning AB",
+    "description": "Specialister på betongborrning, betongskärning, håltagning och rivning i Varberg och Halland sedan 2008.",
+    "url": "https://www.varbergsbetongborrning.se",
+    "telephone": "+46340-123 45",
+    "email": "info@varbergsbetongborrning.se",
+    "foundingDate": "2008",
+    "numberOfEmployees": { "@type": "QuantitativeValue", "value": 6 },
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Industrivägen 12",
+      "addressLocality": "Varberg",
+      "postalCode": "432 44",
+      "addressCountry": "SE",
+      "addressRegion": "Halland"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 57.1057, "longitude": 12.2506 },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "07:00", "closes": "17:00"
+    }],
+    "areaServed": [
+      { "@type": "City", "name": "Varberg" },
+      { "@type": "City", "name": "Kungsbacka" },
+      { "@type": "City", "name": "Falkenberg" },
+      { "@type": "City", "name": "Halmstad" },
+      { "@type": "AdministrativeArea", "name": "Halland" }
+    ],
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "47", "bestRating": "5" }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { heading: ['Syne','system-ui','sans-serif'], body: ['DM Sans','system-ui','sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body class="bg-white font-body">
+
+  <!-- NAV -->
+  <nav x-data="{ open: false }" class="fixed w-full z-50 bg-stone-950/97 backdrop-blur-sm border-b border-stone-800/60">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-3">
+          <div class="w-8 h-8 bg-blue-600 rounded flex items-center justify-center flex-shrink-0">
+            <svg class="w-4 h-4 text-white drill-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+              <circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/>
+              <line x1="12" y1="3" x2="12" y2="5.5" stroke-linecap="round"/>
+              <line x1="12" y1="18.5" x2="12" y2="21" stroke-linecap="round"/>
+              <line x1="3" y1="12" x2="5.5" y2="12" stroke-linecap="round"/>
+              <line x1="18.5" y1="12" x2="21" y2="12" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="leading-tight">
+            <span class="text-white font-heading font-bold text-sm block tracking-tight">Varbergs Betongborrning</span>
+            <span class="text-blue-400 text-[9px] font-medium tracking-[0.2em] uppercase">Aktiebolag</span>
+          </div>
+        </a>
+        <div class="hidden md:flex items-center gap-7 text-sm font-medium">
+          <a href="index.html" class="text-white">Hem</a>
+          <a href="tjanster.html" class="text-stone-400 hover:text-white transition-colors">Tjänster</a>
+          <a href="projekt.html" class="text-stone-400 hover:text-white transition-colors">Projekt</a>
+          <a href="om-oss.html" class="text-stone-400 hover:text-white transition-colors">Om oss</a>
+          <a href="faq.html" class="text-stone-400 hover:text-white transition-colors">FAQ</a>
+          <a href="kontakt.html" class="bg-blue-600 hover:bg-blue-500 text-white px-5 py-2 rounded font-semibold transition-colors">Kontakt</a>
+        </div>
+        <button @click="open = !open" class="md:hidden text-stone-400 hover:text-white">
+          <i x-show="!open" class="ph-bold ph-list text-xl"></i>
+          <i x-show="open" class="ph-bold ph-x text-xl" style="display:none"></i>
+        </button>
+      </div>
+    </div>
+    <div x-show="open" class="md:hidden bg-stone-950 border-t border-stone-800 px-5 py-5 flex flex-col gap-4 text-sm" style="display:none">
+      <a href="index.html" class="text-white">Hem</a>
+      <a href="tjanster.html" class="text-stone-400 hover:text-white">Tjänster</a>
+      <a href="projekt.html" class="text-stone-400 hover:text-white">Projekt</a>
+      <a href="om-oss.html" class="text-stone-400 hover:text-white">Om oss</a>
+      <a href="faq.html" class="text-stone-400 hover:text-white">FAQ</a>
+      <a href="kontakt.html" class="bg-blue-600 text-white px-4 py-2.5 rounded font-semibold text-center mt-1">Kontakta oss</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero-clip bg-stone-950 pt-20 pb-36 px-5 relative overflow-hidden">
+    <img src="images/hero-borrning.jpg" alt="" aria-hidden="true" class="absolute inset-0 w-full h-full object-cover opacity-25 object-center">
+    <div class="absolute inset-0 opacity-[0.04]">
+      <svg width="100%" height="100%"><defs><pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M 48 0 L 0 0 0 48" fill="none" stroke="white" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(#grid)"/></svg>
+    </div>
+    <div class="absolute top-1/3 right-0 w-[500px] h-[500px] bg-blue-700/10 rounded-full blur-[80px] pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto relative">
+      <div class="max-w-2xl">
+        <h1 class="font-heading text-5xl sm:text-6xl lg:text-7xl font-black text-white leading-[1.0] tracking-tight mb-7">
+          Proffs på<br>
+          <span class="text-blue-400">betongborrning</span><br>
+          i Varberg.
+        </h1>
+        <p class="text-stone-300 text-lg sm:text-xl leading-relaxed mb-9 max-w-xl font-body">
+          Vi utför diamantborrning, betongskärning och håltagning med precision och säkerhet. Certifierade fackmän med modern utrustning för privatpersoner, företag och kommuner i hela Halland.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3">
+          <a href="kontakt.html" class="bg-blue-600 hover:bg-blue-500 text-white px-7 py-3.5 rounded font-semibold text-base text-center transition-colors">
+            Begär offert
+          </a>
+          <a href="tel:034012345" class="flex items-center justify-center gap-2.5 border border-stone-700 hover:border-stone-500 text-white px-7 py-3.5 rounded font-medium text-base transition-colors">
+            <i class="ph-bold ph-phone text-blue-400 text-base"></i>
+            0340-123 45
+          </a>
+        </div>
+        <div class="mt-10 flex flex-wrap gap-5 text-stone-400 text-sm">
+          <span class="flex items-center gap-2"><i class="ph-bold ph-check-circle text-blue-500 text-base"></i>F-skattsedel</span>
+          <span class="flex items-center gap-2"><i class="ph-bold ph-check-circle text-blue-500 text-base"></i>Byggavtalets löner</span>
+          <span class="flex items-center gap-2"><i class="ph-bold ph-check-circle text-blue-500 text-base"></i>GPR-scanning ingår</span>
+          <span class="flex items-center gap-2"><i class="ph-bold ph-check-circle text-blue-500 text-base"></i>Akutuppdrag</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- STATS -->
+  <section class="border-b border-stone-800 bg-stone-900 py-12 px-5">
+    <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div>
+        <div class="stat-num text-4xl lg:text-5xl font-black text-white">17+</div>
+        <div class="text-stone-500 text-xs mt-2 uppercase tracking-widest">År i branschen</div>
+      </div>
+      <div>
+        <div class="stat-num text-4xl lg:text-5xl font-black text-white">1 400+</div>
+        <div class="text-stone-500 text-xs mt-2 uppercase tracking-widest">Avklarade projekt</div>
+      </div>
+      <div>
+        <div class="stat-num text-4xl lg:text-5xl font-black text-blue-400">4.9</div>
+        <div class="text-stone-500 text-xs mt-2 uppercase tracking-widest">Snittbetyg Google</div>
+      </div>
+      <div>
+        <div class="stat-num text-4xl lg:text-5xl font-black text-white">24h</div>
+        <div class="text-stone-500 text-xs mt-2 uppercase tracking-widest">Svarstid vid akut</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES OVERVIEW -->
+  <section class="py-20 px-5 bg-white">
+    <div class="max-w-7xl mx-auto">
+      <div class="mb-14">
+        <h2 class="font-heading text-4xl font-black mb-4 tracking-tight">Våra tjänster</h2>
+        <p class="text-stone-500 max-w-lg text-base">Diamantborrning och skärning är kärnan i vår verksamhet. Vi hanterar allt från enkla håltagningar till komplexa industriuppdrag.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+        <a href="tjanster.html#borrning" class="service-card border border-stone-200 rounded-lg p-7 group hover:border-blue-200 transition-colors">
+          <div class="w-11 h-11 bg-stone-100 rounded group-hover:bg-blue-50 flex items-center justify-center mb-6 transition-colors">
+            <i class="ph-bold ph-circle-dashed text-stone-400 group-hover:text-blue-600 text-xl transition-colors"></i>
+          </div>
+          <h3 class="font-heading font-bold text-lg mb-2 tracking-tight">Betongborrning</h3>
+          <p class="text-stone-500 text-sm leading-relaxed">Diamantborrning med precision. Hål från 12 till 800 mm i armerat betong, tegel och natursten.</p>
+          <span class="inline-flex items-center gap-1.5 mt-5 text-blue-600 text-sm font-semibold">Läs mer <i class="ph-bold ph-arrow-right text-xs"></i></span>
+        </a>
+
+        <a href="tjanster.html#skarning" class="service-card border border-stone-200 rounded-lg p-7 group hover:border-blue-200 transition-colors">
+          <div class="w-11 h-11 bg-stone-100 rounded group-hover:bg-blue-50 flex items-center justify-center mb-6 transition-colors">
+            <i class="ph-bold ph-scissors text-stone-400 group-hover:text-blue-600 text-xl transition-colors"></i>
+          </div>
+          <h3 class="font-heading font-bold text-lg mb-2 tracking-tight">Betongskärning</h3>
+          <p class="text-stone-500 text-sm leading-relaxed">Vägg- och golvskärning med diamantblad. Raka, dammreducerade snitt för dörröppningar, fönster och trappor.</p>
+          <span class="inline-flex items-center gap-1.5 mt-5 text-blue-600 text-sm font-semibold">Läs mer <i class="ph-bold ph-arrow-right text-xs"></i></span>
+        </a>
+
+        <a href="tjanster.html#halttagning" class="service-card border border-stone-200 rounded-lg p-7 group hover:border-blue-200 transition-colors">
+          <div class="w-11 h-11 bg-stone-100 rounded group-hover:bg-blue-50 flex items-center justify-center mb-6 transition-colors">
+            <i class="ph-bold ph-plus-circle text-stone-400 group-hover:text-blue-600 text-xl transition-colors"></i>
+          </div>
+          <h3 class="font-heading font-bold text-lg mb-2 tracking-tight">Håltagning</h3>
+          <p class="text-stone-500 text-sm leading-relaxed">Håltagning för ventilation, rör, el och genomföringar. Alla storlekar, alla material, rätt från första gången.</p>
+          <span class="inline-flex items-center gap-1.5 mt-5 text-blue-600 text-sm font-semibold">Läs mer <i class="ph-bold ph-arrow-right text-xs"></i></span>
+        </a>
+
+        <a href="tjanster.html#rivning" class="service-card border border-stone-200 rounded-lg p-7 group hover:border-blue-200 transition-colors">
+          <div class="w-11 h-11 bg-stone-100 rounded group-hover:bg-blue-50 flex items-center justify-center mb-6 transition-colors">
+            <i class="ph-bold ph-hammer text-stone-400 group-hover:text-blue-600 text-xl transition-colors"></i>
+          </div>
+          <h3 class="font-heading font-bold text-lg mb-2 tracking-tight">Kontrollerad rivning</h3>
+          <p class="text-stone-500 text-sm leading-relaxed">Selektiv rivning av betongkonstruktioner. Minimalt damm, minimal påverkan på omgivande strukturer.</p>
+          <span class="inline-flex items-center gap-1.5 mt-5 text-blue-600 text-sm font-semibold">Läs mer <i class="ph-bold ph-arrow-right text-xs"></i></span>
+        </a>
+
+        <a href="tjanster.html#scanning" class="service-card border border-stone-200 rounded-lg p-7 group hover:border-blue-200 transition-colors">
+          <div class="w-11 h-11 bg-stone-100 rounded group-hover:bg-blue-50 flex items-center justify-center mb-6 transition-colors">
+            <i class="ph-bold ph-scan text-stone-400 group-hover:text-blue-600 text-xl transition-colors"></i>
+          </div>
+          <h3 class="font-heading font-bold text-lg mb-2 tracking-tight">GPR-scanning</h3>
+          <p class="text-stone-500 text-sm leading-relaxed">Georadar-scanning innan borrning. Vi lokaliserar armeringsjärn, el och rörinstallationer för maximal säkerhet.</p>
+          <span class="inline-flex items-center gap-1.5 mt-5 text-blue-600 text-sm font-semibold">Läs mer <i class="ph-bold ph-arrow-right text-xs"></i></span>
+        </a>
+
+        <a href="tjanster.html#vatten" class="service-card border border-stone-200 rounded-lg p-7 group hover:border-blue-200 transition-colors">
+          <div class="w-11 h-11 bg-stone-100 rounded group-hover:bg-blue-50 flex items-center justify-center mb-6 transition-colors">
+            <i class="ph-bold ph-waves text-stone-400 group-hover:text-blue-600 text-xl transition-colors"></i>
+          </div>
+          <h3 class="font-heading font-bold text-lg mb-2 tracking-tight">Undervattensarbeten</h3>
+          <p class="text-stone-500 text-sm leading-relaxed">Borrning och skärning under vatten för bryggor, kajer, dammar och fundament längs Hallandskusten.</p>
+          <span class="inline-flex items-center gap-1.5 mt-5 text-blue-600 text-sm font-semibold">Läs mer <i class="ph-bold ph-arrow-right text-xs"></i></span>
+        </a>
+
+      </div>
+      <div class="mt-10">
+        <a href="tjanster.html" class="inline-flex items-center gap-2 border border-stone-300 hover:border-blue-400 text-stone-700 hover:text-blue-700 px-6 py-3 rounded font-semibold text-sm transition-colors">
+          Se alla tjänster <i class="ph-bold ph-arrow-right text-xs"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECENT PROJECTS -->
+  <section class="py-20 px-5 bg-stone-50 border-t border-stone-100">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
+        <div>
+          <h2 class="font-heading text-4xl font-black mb-3 tracking-tight">Senaste projekt</h2>
+          <p class="text-stone-500 text-sm">Urval ur våra senaste uppdrag runt om i Halland.</p>
+        </div>
+        <a href="projekt.html" class="inline-flex items-center gap-1.5 text-blue-600 font-semibold text-sm hover:underline whitespace-nowrap">
+          Se alla projekt <i class="ph-bold ph-arrow-right text-xs"></i>
+        </a>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="project-card rounded-lg overflow-hidden relative bg-stone-200 h-56">
+          <img src="https://placehold.co/800x533/1a1a1a/2563eb?text=Håltagning+centrum" alt="Håltagning i centrumfastighet Varberg" class="w-full h-full object-cover">
+          <div class="overlay absolute inset-0 bg-stone-950/75 flex flex-col justify-end p-5">
+            <span class="text-blue-400 text-xs font-semibold uppercase tracking-wider mb-1">Betongborrning</span>
+            <h3 class="text-white font-heading font-bold text-sm">Håltagning centrumfastighet, Varberg</h3>
+          </div>
+        </div>
+        <div class="project-card rounded-lg overflow-hidden relative bg-stone-200 h-56">
+          <img src="https://placehold.co/800x533/1a1a1a/2563eb?text=Väggskärning+Kungsbacka" alt="Väggskärning för ny dörröppning Kungsbacka" class="w-full h-full object-cover">
+          <div class="overlay absolute inset-0 bg-stone-950/75 flex flex-col justify-end p-5">
+            <span class="text-blue-400 text-xs font-semibold uppercase tracking-wider mb-1">Betongskärning</span>
+            <h3 class="text-white font-heading font-bold text-sm">Väggskärning ny dörröppning, Kungsbacka</h3>
+          </div>
+        </div>
+        <div class="project-card rounded-lg overflow-hidden relative bg-stone-200 h-56">
+          <img src="https://placehold.co/800x533/0f1923/2563eb?text=Brygga+Varbergs+hamn" alt="Undervattensarbeten brygga Varberg hamn" class="w-full h-full object-cover">
+          <div class="overlay absolute inset-0 bg-stone-950/75 flex flex-col justify-end p-5">
+            <span class="text-blue-400 text-xs font-semibold uppercase tracking-wider mb-1">Undervattensarbeten</span>
+            <h3 class="text-white font-heading font-bold text-sm">Bryggrenovering, Varbergs hamn</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="py-20 px-5 bg-white border-t border-stone-100">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+      <div>
+        <h2 class="font-heading text-4xl font-black mb-8 tracking-tight">Varför välja oss?</h2>
+        <div class="space-y-7">
+          <div class="flex gap-5">
+            <div class="w-10 h-10 border border-stone-200 rounded flex items-center justify-center flex-shrink-0">
+              <i class="ph-bold ph-certificate text-blue-600 text-lg"></i>
+            </div>
+            <div>
+              <h3 class="font-heading font-bold mb-1.5 tracking-tight">Certifierade och försäkrade</h3>
+              <p class="text-stone-500 text-sm leading-relaxed">Alla tekniker är utbildade och certifierade. Heltäckande ansvarsförsäkring på 10 mkr. F-skattsedel och kollektivavtal.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <div class="w-10 h-10 border border-stone-200 rounded flex items-center justify-center flex-shrink-0">
+              <i class="ph-bold ph-lightning text-blue-600 text-lg"></i>
+            </div>
+            <div>
+              <h3 class="font-heading font-bold mb-1.5 tracking-tight">Snabb respons vid akut</h3>
+              <p class="text-stone-500 text-sm leading-relaxed">Vi svarar inom 2 timmar på offertförfrågningar under vardagar. Akutuppdrag hanteras inom 24 timmar.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <div class="w-10 h-10 border border-stone-200 rounded flex items-center justify-center flex-shrink-0">
+              <i class="ph-bold ph-shield text-blue-600 text-lg"></i>
+            </div>
+            <div>
+              <h3 class="font-heading font-bold mb-1.5 tracking-tight">GPR-scanning som standard</h3>
+              <p class="text-stone-500 text-sm leading-relaxed">Vi scannar alltid med georadar innan borrning för att lokalisera dold armering och installationer. Inget lämnas åt slumpen.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <div class="w-10 h-10 border border-stone-200 rounded flex items-center justify-center flex-shrink-0">
+              <i class="ph-bold ph-map-pin text-blue-600 text-lg"></i>
+            </div>
+            <div>
+              <h3 class="font-heading font-bold mb-1.5 tracking-tight">Lokal förankring i Halland</h3>
+              <p class="text-stone-500 text-sm leading-relaxed">Baserade i Varberg med snabb täckning i hela Halland och södra Bohuslän. Vi känner byggnadsbeståndet i regionen.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-stone-950 rounded-lg p-8 text-white">
+        <h3 class="font-heading font-bold text-xl mb-1.5 tracking-tight">Kostnadsfri offert</h3>
+        <p class="text-stone-400 text-sm mb-6">Fyll i formuläret så återkommer vi inom 2 timmar (vardagar).</p>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-3.5">
+          <input type="text" name="name" placeholder="Ditt namn" required class="w-full bg-stone-900 border border-stone-700 rounded px-4 py-3 text-white text-sm placeholder-stone-500 focus:border-blue-500 outline-none transition-colors">
+          <input type="tel" name="phone" placeholder="Telefonnummer" class="w-full bg-stone-900 border border-stone-700 rounded px-4 py-3 text-white text-sm placeholder-stone-500 focus:border-blue-500 outline-none transition-colors">
+          <select name="service" class="w-full bg-stone-900 border border-stone-700 rounded px-4 py-3 text-stone-400 text-sm focus:border-blue-500 outline-none transition-colors">
+            <option value="">Välj tjänst...</option>
+            <option>Betongborrning</option>
+            <option>Betongskärning</option>
+            <option>Håltagning</option>
+            <option>Rivning</option>
+            <option>GPR-scanning</option>
+            <option>Undervattensarbeten</option>
+            <option>Vet ej / övrigt</option>
+          </select>
+          <textarea name="message" placeholder="Beskriv vad du behöver hjälp med..." rows="3" class="w-full bg-stone-900 border border-stone-700 rounded px-4 py-3 text-white text-sm placeholder-stone-500 focus:border-blue-500 outline-none transition-colors resize-none"></textarea>
+          <button type="submit" class="w-full bg-blue-600 hover:bg-blue-500 text-white py-3 rounded font-semibold transition-colors">
+            Skicka förfrågan
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ TEASER -->
+  <section class="py-20 px-5 bg-stone-50 border-t border-stone-100">
+    <div class="max-w-3xl mx-auto">
+      <div class="mb-10">
+        <h2 class="font-heading text-4xl font-black mb-3 tracking-tight">Vanliga frågor</h2>
+        <p class="text-stone-500 text-sm">Snabba svar på det vi oftast får frågor om.</p>
+      </div>
+      <div class="space-y-3" itemscope itemtype="https://schema.org/FAQPage">
+        <div class="bg-white border border-stone-200 rounded-lg p-6" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <h3 class="font-heading font-bold text-stone-900" itemprop="name">Vad kostar betongborrning?</h3>
+          <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <p class="text-stone-500 text-sm mt-2 leading-relaxed" itemprop="text">Priset beror på håldiameter, materialtjocklek och antal hål. Enklare uppdrag startar vanligtvis runt 1 500 till 3 000 kr exkl. moms. Vi lämnar alltid fast pris i offert utan dolda kostnader.</p>
+          </div>
+        </div>
+        <div class="bg-white border border-stone-200 rounded-lg p-6" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <h3 class="font-heading font-bold text-stone-900" itemprop="name">Kan ni borra i armerat betong?</h3>
+          <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <p class="text-stone-500 text-sm mt-2 leading-relaxed" itemprop="text">Ja. Vi använder diamantborrning som skär precist genom armerad betong utan att skada omkringliggande konstruktion. GPR-scanning ingår alltid för att kartlägga armeringslayout innan arbetet påbörjas.</p>
+          </div>
+        </div>
+        <div class="bg-white border border-stone-200 rounded-lg p-6" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <h3 class="font-heading font-bold text-stone-900" itemprop="name">Hur lång tid tar ett borrningsuppdrag?</h3>
+          <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <p class="text-stone-500 text-sm mt-2 leading-relaxed" itemprop="text">Enkla håltagningar (1 till 5 hål) klaras vanligtvis på 2 till 4 timmar. Större projekt planeras individuellt. Vi levererar alltid en tidsplan med offerten.</p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-7">
+        <a href="faq.html" class="inline-flex items-center gap-1.5 text-blue-600 font-semibold text-sm hover:underline">
+          Se alla frågor och svar <i class="ph-bold ph-arrow-right text-xs"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE AREA -->
+  <section class="py-14 px-5 bg-white border-t border-stone-100">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="font-heading text-xl font-bold mb-2 tracking-tight">Verksamhetsområde</h2>
+      <p class="text-stone-500 text-sm mb-7 max-w-xl">Vi utför betongborrning och betongskärning i hela Halland och angränsande kommuner. Baserade i Varberg med snabb utryckning.</p>
+      <div class="flex flex-wrap gap-2 text-sm">
+        <span class="bg-stone-100 text-stone-700 px-3 py-1.5 text-xs font-medium tracking-wide">Varberg</span>
+        <span class="bg-stone-100 text-stone-700 px-3 py-1.5 text-xs font-medium tracking-wide">Kungsbacka</span>
+        <span class="bg-stone-100 text-stone-700 px-3 py-1.5 text-xs font-medium tracking-wide">Falkenberg</span>
+        <span class="bg-stone-100 text-stone-700 px-3 py-1.5 text-xs font-medium tracking-wide">Halmstad</span>
+        <span class="bg-stone-100 text-stone-700 px-3 py-1.5 text-xs font-medium tracking-wide">Laholm</span>
+        <span class="bg-stone-100 text-stone-700 px-3 py-1.5 text-xs font-medium tracking-wide">Göteborg</span>
+        <span class="bg-stone-100 text-stone-700 px-3 py-1.5 text-xs font-medium tracking-wide">Mölndal</span>
+        <span class="bg-stone-100 text-stone-700 px-3 py-1.5 text-xs font-medium tracking-wide">Borås</span>
+        <span class="bg-blue-600 text-white px-3 py-1.5 text-xs font-semibold tracking-wide">Hela Halland</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-stone-950 text-stone-400 pt-16 pb-8 px-5">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+      <div class="lg:col-span-2">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="w-8 h-8 bg-blue-600 rounded flex items-center justify-center flex-shrink-0">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <span class="text-white font-heading font-bold tracking-tight">Varbergs Betongborrning AB</span>
+        </div>
+        <p class="text-sm leading-relaxed max-w-xs text-stone-400">Certifierade specialister på betongborrning, betongskärning och håltagning. Verksamma i Varberg och hela Halland sedan 2008.</p>
+        <p class="text-xs mt-5 text-stone-600">Org.nr: 556789-1234 &nbsp;&middot;&nbsp; Innehar F-skattsedel &nbsp;&middot;&nbsp; Kollektivavtal</p>
+      </div>
+      <div>
+        <h3 class="text-white text-xs font-semibold uppercase tracking-widest mb-4">Tjänster</h3>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="tjanster.html#borrning" class="hover:text-blue-400 transition-colors">Betongborrning</a></li>
+          <li><a href="tjanster.html#skarning" class="hover:text-blue-400 transition-colors">Betongskärning</a></li>
+          <li><a href="tjanster.html#halttagning" class="hover:text-blue-400 transition-colors">Håltagning</a></li>
+          <li><a href="tjanster.html#rivning" class="hover:text-blue-400 transition-colors">Rivning</a></li>
+          <li><a href="tjanster.html#scanning" class="hover:text-blue-400 transition-colors">GPR-scanning</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-white text-xs font-semibold uppercase tracking-widest mb-4">Kontakt</h3>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="tel:034012345" class="hover:text-blue-400 transition-colors">0340-123 45</a></li>
+          <li><a href="tel:070-1234567" class="hover:text-blue-400 transition-colors">070-123 45 67 (jour)</a></li>
+          <li><a href="mailto:info@varbergsbetongborrning.se" class="hover:text-blue-400 transition-colors break-all">info@varbergsbetongborrning.se</a></li>
+          <li class="text-stone-600 text-xs leading-relaxed pt-2">Industrivägen 12<br>432 44 Varberg<br>Vardagar 07:00 till 17:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto pt-6 border-t border-stone-800 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-stone-600">
+      <p>© 2025 Varbergs Betongborrning AB. Alla rättigheter förbehållna.</p>
+      <div class="flex gap-4">
+        <a href="#" class="hover:text-stone-400 transition-colors">Integritetspolicy</a>
+        <a href="sitemap.xml" class="hover:text-stone-400 transition-colors">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

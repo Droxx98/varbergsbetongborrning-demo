@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Om oss – Varbergs Betongborrning AB | Certifierade fackmän sedan 2008</title>
+  <meta name="description" content="Varbergs Betongborrning AB grundades 2008 av Per Lindström. Ett lokalt företag med 6 anställda och gedigen erfarenhet av betongborrning och skärning i Halland.">
+  <link rel="canonical" href="https://www.varbergsbetongborrning.se/om-oss">
+  <script type="application/ld+json">
+  { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": 1, "name": "Hem", "item": "https://www.varbergsbetongborrning.se/" }, { "@type": "ListItem", "position": 2, "name": "Om oss", "item": "https://www.varbergsbetongborrning.se/om-oss" } ] }
+  </script>
+  <script type="application/ld+json">
+  { "@context": "https://schema.org", "@type": "Organization", "name": "Varbergs Betongborrning AB", "foundingDate": "2008", "founder": { "@type": "Person", "name": "Per Lindström" }, "numberOfEmployees": { "@type": "QuantitativeValue", "value": 6 }, "legalName": "Varbergs Betongborrning Aktiebolag", "identifier": "556789-1234" }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { theme: { extend: { fontFamily: { heading: ['Syne','system-ui','sans-serif'], body: ['DM Sans','system-ui','sans-serif'] } } } }</script>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="bg-white font-body">
+
+  <nav x-data="{ open: false }" class="fixed w-full z-50 bg-stone-950/97 backdrop-blur-sm border-b border-stone-800/60">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-3">
+          <div class="w-8 h-8 bg-blue-600 rounded flex items-center justify-center flex-shrink-0">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <div class="leading-tight">
+            <span class="text-white font-heading font-bold text-sm block tracking-tight">Varbergs Betongborrning</span>
+            <span class="text-blue-400 text-[9px] font-medium tracking-[0.2em] uppercase">Aktiebolag</span>
+          </div>
+        </a>
+        <div class="hidden md:flex items-center gap-7 text-sm font-medium">
+          <a href="index.html" class="text-stone-400 hover:text-white transition-colors">Hem</a>
+          <a href="tjanster.html" class="text-stone-400 hover:text-white transition-colors">Tjänster</a>
+          <a href="projekt.html" class="text-stone-400 hover:text-white transition-colors">Projekt</a>
+          <a href="om-oss.html" class="text-white">Om oss</a>
+          <a href="faq.html" class="text-stone-400 hover:text-white transition-colors">FAQ</a>
+          <a href="kontakt.html" class="bg-blue-600 hover:bg-blue-500 text-white px-5 py-2 rounded font-semibold transition-colors">Kontakt</a>
+        </div>
+        <button @click="open = !open" class="md:hidden text-stone-400 hover:text-white">
+          <i x-show="!open" class="ph-bold ph-list text-xl"></i>
+          <i x-show="open" class="ph-bold ph-x text-xl" style="display:none"></i>
+        </button>
+      </div>
+    </div>
+    <div x-show="open" class="md:hidden bg-stone-950 border-t border-stone-800 px-5 py-5 flex flex-col gap-4 text-sm" style="display:none">
+      <a href="index.html" class="text-stone-400 hover:text-white">Hem</a>
+      <a href="tjanster.html" class="text-stone-400 hover:text-white">Tjänster</a>
+      <a href="projekt.html" class="text-stone-400 hover:text-white">Projekt</a>
+      <a href="om-oss.html" class="text-white">Om oss</a>
+      <a href="faq.html" class="text-stone-400 hover:text-white">FAQ</a>
+      <a href="kontakt.html" class="bg-blue-600 text-white px-4 py-2.5 rounded font-semibold text-center mt-1">Kontakta oss</a>
+    </div>
+  </nav>
+
+  <div class="bg-stone-950 pt-28 pb-16 px-5">
+    <div class="max-w-7xl mx-auto">
+      <nav class="text-xs text-stone-600 mb-5 breadcrumb"><a href="index.html">Hem</a> <span class="mx-2">/</span> <span class="text-stone-400">Om oss</span></nav>
+      <h1 class="font-heading text-5xl font-black text-white mb-4 tracking-tight">Om oss</h1>
+      <p class="text-stone-400 text-lg max-w-xl">Lokalt Varbergsföretag med djupa rötter i byggbranschen. Vi har borrat, skurit och tagit hål i betong sedan 2008.</p>
+    </div>
+  </div>
+
+  <!-- STORY -->
+  <section class="py-20 px-5 bg-white">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div>
+        <span class="text-blue-600 text-xs font-semibold uppercase tracking-widest">Vår historia</span>
+        <h2 class="font-heading text-4xl font-black mt-2 mb-6 tracking-tight">Grundat med yrkeshantverkares ögon</h2>
+        <p class="text-stone-600 leading-relaxed mb-5">
+          Per Lindström startade Varbergs Betongborrning AB år 2008 efter femton år som betongarbetare och platschef i Hallandsregionen. Han såg ett tydligt gap: lokala bygg- och VVS-företag behövde en pålitlig, snabb och tekniskt kompetent partner för håltagning och skärning, utan att behöva anlita dyra rikstäckande kedjor.
+        </p>
+        <p class="text-stone-600 leading-relaxed mb-5">
+          Från en maskin och en anställd har företaget vuxit till ett team på sex certifierade tekniker, med en maskinpark som täcker allt från miniborrar för trånga utrymmen till fullskaliga väggsågar för industriuppdrag.
+        </p>
+        <p class="text-stone-600 leading-relaxed">
+          Idag är vi en given samarbetspartner för VVS-firmor, el-entreprenörer, byggbolag och kommunala fastighetsförvaltare i hela Halland. Men vi tar lika gärna ett enstaka hål för en privatperson i Varberg.
+        </p>
+      </div>
+      <div class="relative">
+        <div class="bg-stone-100 rounded-lg overflow-hidden aspect-[4/3]">
+          <img src="https://placehold.co/800x600/1a1a1a/2563eb?text=Per+Lindström+Grundare" alt="Per Lindström, grundare av Varbergs Betongborrning" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute -bottom-5 -left-5 bg-blue-600 text-white rounded-lg p-5 shadow-xl">
+          <div class="font-heading text-3xl font-black">2008</div>
+          <div class="text-blue-200 text-xs mt-0.5 uppercase tracking-wider">Grundades i Varberg</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="py-20 px-5 bg-stone-50 border-t border-stone-100">
+    <div class="max-w-7xl mx-auto">
+      <div class="max-w-xl mb-14">
+        <h2 class="font-heading text-4xl font-black mb-3 tracking-tight">Så här jobbar vi</h2>
+        <p class="text-stone-500 text-sm">Tre principer som styr varje uppdrag vi tar oss an.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <div class="w-12 h-12 border border-stone-200 rounded-lg flex items-center justify-center mb-5">
+            <i class="ph-bold ph-shield text-blue-600 text-xl"></i>
+          </div>
+          <h3 class="font-heading font-bold text-xl mb-3 tracking-tight">Säkerhet först</h3>
+          <p class="text-stone-500 text-sm leading-relaxed">GPR-scanning är aldrig frivilligt hos oss — det ingår alltid. Vi skippar aldrig steget att kartlägga vad som finns i betongen innan vi borrar. Det skyddar kunden, oss och konstruktionen.</p>
+        </div>
+        <div>
+          <div class="w-12 h-12 border border-stone-200 rounded-lg flex items-center justify-center mb-5">
+            <i class="ph-bold ph-clock text-blue-600 text-xl"></i>
+          </div>
+          <h3 class="font-heading font-bold text-xl mb-3 tracking-tight">Tid är pengar</h3>
+          <p class="text-stone-500 text-sm leading-relaxed">Vi lovar att vara på plats den dag vi sagt. Offerten innehåller alltid en realistisk tidsplan. Förseningar kostar kunden pengar och vi tar det på allvar.</p>
+        </div>
+        <div>
+          <div class="w-12 h-12 border border-stone-200 rounded-lg flex items-center justify-center mb-5">
+            <i class="ph-bold ph-users text-blue-600 text-xl"></i>
+          </div>
+          <h3 class="font-heading font-bold text-xl mb-3 tracking-tight">Rätt man på rätt plats</h3>
+          <p class="text-stone-500 text-sm leading-relaxed">Alla tekniker är certifierade och specialiserade. Vi skickar aldrig en lärling ensam till ett komplext uppdrag. Du får alltid en tekniker med rätt kompetens för just din situation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="py-20 px-5 bg-white border-t border-stone-100">
+    <div class="max-w-7xl mx-auto">
+      <div class="max-w-xl mb-14">
+        <h2 class="font-heading text-4xl font-black mb-3 tracking-tight">Möt teamet</h2>
+        <p class="text-stone-500 text-sm">Sex dedikerade yrkesmän med samlad erfarenhet på över 80 år i betong- och byggbranschen.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="flex gap-4">
+          <div class="w-16 h-16 rounded-lg overflow-hidden bg-stone-100 flex-shrink-0">
+            <img src="https://placehold.co/200x200/1a1a1a/2563eb?text=PL" alt="Per Lindström VD" class="w-full h-full object-cover">
+          </div>
+          <div>
+            <h3 class="font-heading font-bold tracking-tight">Per Lindström</h3>
+            <p class="text-blue-600 text-xs font-semibold uppercase tracking-wider mt-0.5">VD &amp; Grundare</p>
+            <p class="text-stone-500 text-sm mt-2 leading-relaxed">25 år i branschen. Certifierad betongtekniker. Leder offertarbete och komplexa uppdrag.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="w-16 h-16 rounded-lg overflow-hidden bg-stone-100 flex-shrink-0">
+            <img src="https://placehold.co/200x200/1a1a1a/2563eb?text=MJ" alt="Magnus Johansson tekniker" class="w-full h-full object-cover">
+          </div>
+          <div>
+            <h3 class="font-heading font-bold tracking-tight">Magnus Johansson</h3>
+            <p class="text-blue-600 text-xs font-semibold uppercase tracking-wider mt-0.5">Seniortekniker, Borrning</p>
+            <p class="text-stone-500 text-sm mt-2 leading-relaxed">18 år i branschen. Specialist på storborrningar och industriuppdrag. GPR-certifierad.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="w-16 h-16 rounded-lg overflow-hidden bg-stone-100 flex-shrink-0">
+            <img src="https://placehold.co/200x200/1a1a1a/2563eb?text=AK" alt="Anna Karlsson administration" class="w-full h-full object-cover">
+          </div>
+          <div>
+            <h3 class="font-heading font-bold tracking-tight">Anna Karlsson</h3>
+            <p class="text-blue-600 text-xs font-semibold uppercase tracking-wider mt-0.5">Administration &amp; Offert</p>
+            <p class="text-stone-500 text-sm mt-2 leading-relaxed">Hanterar offertförfrågningar, fakturering och kundkontakt. Svarar dig snabbt och tydligt.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="w-16 h-16 rounded-lg overflow-hidden bg-stone-100 flex-shrink-0">
+            <img src="https://placehold.co/200x200/1a1a1a/2563eb?text=EH" alt="Erik Hansson tekniker skärning" class="w-full h-full object-cover">
+          </div>
+          <div>
+            <h3 class="font-heading font-bold tracking-tight">Erik Hansson</h3>
+            <p class="text-blue-600 text-xs font-semibold uppercase tracking-wider mt-0.5">Tekniker, Skärning</p>
+            <p class="text-stone-500 text-sm mt-2 leading-relaxed">Specialist på väggskärning och golvskärning. Certifierad diamantoperatör.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="w-16 h-16 rounded-lg overflow-hidden bg-stone-100 flex-shrink-0">
+            <img src="https://placehold.co/200x200/1a1a1a/2563eb?text=JB" alt="Johan Berg tekniker rivning" class="w-full h-full object-cover">
+          </div>
+          <div>
+            <h3 class="font-heading font-bold tracking-tight">Johan Berg</h3>
+            <p class="text-blue-600 text-xs font-semibold uppercase tracking-wider mt-0.5">Tekniker, Rivning</p>
+            <p class="text-stone-500 text-sm mt-2 leading-relaxed">Inriktning på kontrollerad rivning och selektiv nedmontering av betongkonstruktioner.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="w-16 h-16 rounded-lg overflow-hidden bg-stone-100 flex-shrink-0">
+            <img src="https://placehold.co/200x200/1a1a1a/2563eb?text=LS" alt="Lena Svensson tekniker" class="w-full h-full object-cover">
+          </div>
+          <div>
+            <h3 class="font-heading font-bold tracking-tight">Lena Svensson</h3>
+            <p class="text-blue-600 text-xs font-semibold uppercase tracking-wider mt-0.5">Tekniker, Borrning &amp; Scanning</p>
+            <p class="text-stone-500 text-sm mt-2 leading-relaxed">Ansvarar för GPR-scanning och utför borrningsuppdrag i hela Halland.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="py-20 px-5 bg-stone-950 border-t border-stone-800">
+    <div class="max-w-7xl mx-auto">
+      <div class="max-w-xl mb-14">
+        <h2 class="font-heading text-4xl font-black text-white mb-3 tracking-tight">Certifieringar och åtaganden</h2>
+        <p class="text-stone-400 text-sm">Vi uppfyller branschens krav och håller oss uppdaterade på nya standarder och utrustning.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="border border-stone-800 rounded-lg p-6">
+          <i class="ph-bold ph-file-text text-blue-500 text-2xl mb-4 block"></i>
+          <h3 class="font-heading font-bold text-white mb-2 tracking-tight">F-skattsedel</h3>
+          <p class="text-stone-500 text-sm">Registrerat hos Skatteverket. Fakturerar med moms.</p>
+        </div>
+        <div class="border border-stone-800 rounded-lg p-6">
+          <i class="ph-bold ph-shield text-blue-500 text-2xl mb-4 block"></i>
+          <h3 class="font-heading font-bold text-white mb-2 tracking-tight">Ansvarsförsäkring</h3>
+          <p class="text-stone-500 text-sm">Heltäckande ansvarsförsäkring på 10 miljoner kronor.</p>
+        </div>
+        <div class="border border-stone-800 rounded-lg p-6">
+          <i class="ph-bold ph-scan text-blue-500 text-2xl mb-4 block"></i>
+          <h3 class="font-heading font-bold text-white mb-2 tracking-tight">GPR-certifierade</h3>
+          <p class="text-stone-500 text-sm">Certifierade operatörer för georadar-scanning av betong.</p>
+        </div>
+        <div class="border border-stone-800 rounded-lg p-6">
+          <i class="ph-bold ph-handshake text-blue-500 text-2xl mb-4 block"></i>
+          <h3 class="font-heading font-bold text-white mb-2 tracking-tight">Kollektivavtal</h3>
+          <p class="text-stone-500 text-sm">Byggavtalets löner och villkor. Tryggt för alla inblandade.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="py-20 px-5 bg-white border-t border-stone-100">
+    <div class="max-w-7xl mx-auto">
+      <div class="max-w-xl mb-14">
+        <h2 class="font-heading text-4xl font-black mb-2 tracking-tight">Vad säger kunderna?</h2>
+        <div class="flex items-center gap-2 mt-3">
+          <div class="flex gap-0.5">
+            <i class="ph-bold ph-star text-yellow-500 text-sm"></i>
+            <i class="ph-bold ph-star text-yellow-500 text-sm"></i>
+            <i class="ph-bold ph-star text-yellow-500 text-sm"></i>
+            <i class="ph-bold ph-star text-yellow-500 text-sm"></i>
+            <i class="ph-bold ph-star text-yellow-500 text-sm"></i>
+          </div>
+          <span class="text-stone-500 text-sm">4,9 av 5 baserat på 47 omdömen på Google</span>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <blockquote class="border border-stone-200 rounded-lg p-6" itemscope itemtype="https://schema.org/Review">
+          <div class="flex gap-0.5 mb-4">
+            <i class="ph-bold ph-star text-yellow-500 text-sm"></i><i class="ph-bold ph-star text-yellow-500 text-sm"></i><i class="ph-bold ph-star text-yellow-500 text-sm"></i><i class="ph-bold ph-star text-yellow-500 text-sm"></i><i class="ph-bold ph-star text-yellow-500 text-sm"></i>
+          </div>
+          <p class="text-stone-600 text-sm leading-relaxed mb-5" itemprop="reviewBody">"Beställde håltagning för luftvärmepump i grundmuren. Snabb offert, kom precis när de sagt och jobbade rent och prydligt. Rekommenderas varmt!"</p>
+          <div class="text-xs text-stone-400" itemprop="author" itemscope itemtype="https://schema.org/Person">
+            <span class="font-semibold text-stone-700" itemprop="name">Maria T.</span> · Varberg · Villa
+          </div>
+        </blockquote>
+        <blockquote class="border border-stone-200 rounded-lg p-6" itemscope itemtype="https://schema.org/Review">
+          <div class="flex gap-0.5 mb-4">
+            <i class="ph-bold ph-star text-yellow-500 text-sm"></i><i class="ph-bold ph-star text-yellow-500 text-sm"></i><i class="ph-bold ph-star text-yellow-500 text-sm"></i><i class="ph-bold ph-star text-yellow-500 text-sm"></i><i class="ph-bold ph-star text-yellow-500 text-sm"></i>
+          </div>
+          <p class="text-stone-600 text-sm leading-relaxed mb-5" itemprop="reviewBody">"Vi anlitar VBB kontinuerligt för håltagning i våra fastigheter. Snabb respons, håller tider och levererar jämn kvalitet. En samarbetspartner vi litar på."</p>
+          <div class="text-xs text-stone-400" itemprop="author" itemscope itemtype="https://schema.org/Person">
+            <span class="font-semibold text-stone-700" itemprop="name">Stefan L.</span> · Kungsbacka · Fastighetsförvaltning
+          </div>
+        </blockquote>
+        <blockquote class="border border-stone-200 rounded-lg p-6" itemscope itemtype="https://schema.org/Review">
+          <div class="flex gap-0.5 mb-4">
+            <i class="ph-bold ph-star text-yellow-500 text-sm"></i><i class="ph-bold ph-star text-yellow-500 text-sm"></i><i class="ph-bold ph-star text-yellow-500 text-sm"></i><i class="ph-bold ph-star text-yellow-500 text-sm"></i><i class="ph-bold ph-star text-yellow-500 text-sm"></i>
+          </div>
+          <p class="text-stone-600 text-sm leading-relaxed mb-5" itemprop="reviewBody">"Akut skärningsuppdrag en fredag eftermiddag. De ställde upp, var på plats morgonen efter och löste problemet. Prisvärt och proffsigt."</p>
+          <div class="text-xs text-stone-400" itemprop="author" itemscope itemtype="https://schema.org/Person">
+            <span class="font-semibold text-stone-700" itemprop="name">Björn E.</span> · Falkenberg · VVS-företag
+          </div>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 px-5 bg-stone-950 border-t border-stone-800 text-center">
+    <div class="max-w-xl mx-auto">
+      <h2 class="font-heading text-3xl font-black text-white mb-3 tracking-tight">Redo att jobba med oss?</h2>
+      <p class="text-stone-400 text-sm mb-8">Kontakta oss för en kostnadsfri offert. Vi svarar inom 2 timmar under vardagar.</p>
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="kontakt.html" class="bg-blue-600 hover:bg-blue-500 text-white px-7 py-3.5 rounded font-semibold transition-colors">Begär offert</a>
+        <a href="tel:034012345" class="border border-stone-700 hover:border-stone-500 text-white px-7 py-3.5 rounded font-medium transition-colors">0340-123 45</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-stone-950 text-stone-400 pt-16 pb-8 px-5 border-t border-stone-800">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+      <div class="lg:col-span-2">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="w-8 h-8 bg-blue-600 rounded flex items-center justify-center flex-shrink-0">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <span class="text-white font-heading font-bold tracking-tight">Varbergs Betongborrning AB</span>
+        </div>
+        <p class="text-sm leading-relaxed max-w-xs text-stone-500">Certifierade specialister på betongborrning, betongskärning och håltagning. Verksamma i Varberg och hela Halland sedan 2008.</p>
+      </div>
+      <div>
+        <h3 class="text-white text-xs font-semibold uppercase tracking-widest mb-4">Tjänster</h3>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="tjanster.html#borrning" class="hover:text-blue-400 transition-colors">Betongborrning</a></li>
+          <li><a href="tjanster.html#skarning" class="hover:text-blue-400 transition-colors">Betongskärning</a></li>
+          <li><a href="tjanster.html#halttagning" class="hover:text-blue-400 transition-colors">Håltagning</a></li>
+          <li><a href="tjanster.html#rivning" class="hover:text-blue-400 transition-colors">Rivning</a></li>
+          <li><a href="tjanster.html#scanning" class="hover:text-blue-400 transition-colors">GPR-scanning</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-white text-xs font-semibold uppercase tracking-widest mb-4">Kontakt</h3>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="tel:034012345" class="hover:text-blue-400 transition-colors">0340-123 45</a></li>
+          <li><a href="mailto:info@varbergsbetongborrning.se" class="hover:text-blue-400 transition-colors break-all">info@varbergsbetongborrning.se</a></li>
+          <li class="text-stone-600 text-xs leading-relaxed pt-2">Industrivägen 12, 432 44 Varberg<br>Vardagar 07:00 till 17:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto pt-6 border-t border-stone-800 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-stone-600">
+      <p>© 2025 Varbergs Betongborrning AB. Alla rättigheter förbehållna.</p>
+      <p>Org.nr: 556789-1234 · F-skattsedel</p>
+    </div>
+  </footer>
+
+</body>
+</html>

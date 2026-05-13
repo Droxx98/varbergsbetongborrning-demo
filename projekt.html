@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projekt och Portfolio – Betongarbeten i Halland | Varbergs Betongborrning AB</title>
+  <meta name="description" content="Se urval av genomförda betongborrnings- och skärningsprojekt i Varberg, Kungsbacka, Falkenberg och hela Halland. Verkliga uppdrag från privatpersoner, företag och kommuner.">
+  <link rel="canonical" href="https://www.varbergsbetongborrning.se/projekt">
+  <script type="application/ld+json">
+  { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": 1, "name": "Hem", "item": "https://www.varbergsbetongborrning.se/" }, { "@type": "ListItem", "position": 2, "name": "Projekt", "item": "https://www.varbergsbetongborrning.se/projekt" } ] }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { theme: { extend: { fontFamily: { heading: ['Syne','system-ui','sans-serif'], body: ['DM Sans','system-ui','sans-serif'] } } } }</script>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="bg-white font-body">
+
+  <nav x-data="{ open: false }" class="fixed w-full z-50 bg-stone-950/97 backdrop-blur-sm border-b border-stone-800/60">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-3">
+          <div class="w-8 h-8 bg-blue-600 rounded flex items-center justify-center flex-shrink-0">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <div class="leading-tight">
+            <span class="text-white font-heading font-bold text-sm block tracking-tight">Varbergs Betongborrning</span>
+            <span class="text-blue-400 text-[9px] font-medium tracking-[0.2em] uppercase">Aktiebolag</span>
+          </div>
+        </a>
+        <div class="hidden md:flex items-center gap-7 text-sm font-medium">
+          <a href="index.html" class="text-stone-400 hover:text-white transition-colors">Hem</a>
+          <a href="tjanster.html" class="text-stone-400 hover:text-white transition-colors">Tjänster</a>
+          <a href="projekt.html" class="text-white">Projekt</a>
+          <a href="om-oss.html" class="text-stone-400 hover:text-white transition-colors">Om oss</a>
+          <a href="faq.html" class="text-stone-400 hover:text-white transition-colors">FAQ</a>
+          <a href="kontakt.html" class="bg-blue-600 hover:bg-blue-500 text-white px-5 py-2 rounded font-semibold transition-colors">Kontakt</a>
+        </div>
+        <button @click="open = !open" class="md:hidden text-stone-400 hover:text-white">
+          <i x-show="!open" class="ph-bold ph-list text-xl"></i>
+          <i x-show="open" class="ph-bold ph-x text-xl" style="display:none"></i>
+        </button>
+      </div>
+    </div>
+    <div x-show="open" class="md:hidden bg-stone-950 border-t border-stone-800 px-5 py-5 flex flex-col gap-4 text-sm" style="display:none">
+      <a href="index.html" class="text-stone-400 hover:text-white">Hem</a>
+      <a href="tjanster.html" class="text-stone-400 hover:text-white">Tjänster</a>
+      <a href="projekt.html" class="text-white">Projekt</a>
+      <a href="om-oss.html" class="text-stone-400 hover:text-white">Om oss</a>
+      <a href="faq.html" class="text-stone-400 hover:text-white">FAQ</a>
+      <a href="kontakt.html" class="bg-blue-600 text-white px-4 py-2.5 rounded font-semibold text-center mt-1">Kontakta oss</a>
+    </div>
+  </nav>
+
+  <div class="bg-stone-950 pt-28 pb-16 px-5">
+    <div class="max-w-7xl mx-auto">
+      <nav class="text-xs text-stone-600 mb-5 breadcrumb">
+        <a href="index.html">Hem</a> <span class="mx-2">/</span> <span class="text-stone-400">Projekt</span>
+      </nav>
+      <h1 class="font-heading text-5xl font-black text-white mb-4 tracking-tight">Våra projekt</h1>
+      <p class="text-stone-400 text-lg max-w-xl">Urval av genomförda uppdrag runt om i Halland, från enstaka håltagningar till stora infrastrukturprojekt.</p>
+    </div>
+  </div>
+
+  <div x-data="{ filter: 'alla' }" class="bg-white">
+    <div class="border-b border-stone-100 px-5">
+      <div class="max-w-7xl mx-auto py-4 flex flex-wrap gap-2">
+        <button @click="filter = 'alla'" :class="filter === 'alla' ? 'bg-stone-900 text-white' : 'text-stone-500 hover:text-stone-900'" class="px-3 py-1.5 text-xs font-semibold uppercase tracking-wider transition-colors border border-transparent" :style="filter === 'alla' ? '' : 'border-color: transparent'">Alla</button>
+        <button @click="filter = 'borrning'" :class="filter === 'borrning' ? 'bg-stone-900 text-white' : 'text-stone-500 hover:text-stone-900'" class="px-3 py-1.5 text-xs font-semibold uppercase tracking-wider transition-colors">Betongborrning</button>
+        <button @click="filter = 'skarning'" :class="filter === 'skarning' ? 'bg-stone-900 text-white' : 'text-stone-500 hover:text-stone-900'" class="px-3 py-1.5 text-xs font-semibold uppercase tracking-wider transition-colors">Betongskärning</button>
+        <button @click="filter = 'rivning'" :class="filter === 'rivning' ? 'bg-stone-900 text-white' : 'text-stone-500 hover:text-stone-900'" class="px-3 py-1.5 text-xs font-semibold uppercase tracking-wider transition-colors">Rivning</button>
+        <button @click="filter = 'vatten'" :class="filter === 'vatten' ? 'bg-stone-900 text-white' : 'text-stone-500 hover:text-stone-900'" class="px-3 py-1.5 text-xs font-semibold uppercase tracking-wider transition-colors">Undervattensarbeten</button>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-5 py-14">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+        <article x-show="filter === 'alla' || filter === 'borrning'" class="project-card border border-stone-200 rounded-lg overflow-hidden bg-white">
+          <div class="relative h-52 bg-stone-100 overflow-hidden">
+            <img src="https://placehold.co/800x533/1a1a1a/2563eb?text=Centrumfastighet+Varberg" alt="Håltagning ventilation centrumfastighet Varberg" class="w-full h-full object-cover">
+            <div class="overlay absolute inset-0 bg-stone-950/70 flex items-end p-4">
+              <span class="text-blue-400 text-xs font-semibold uppercase tracking-widest">Betongborrning</span>
+            </div>
+          </div>
+          <div class="p-5">
+            <h2 class="font-heading font-bold text-base mb-1 tracking-tight">Centrumfastighet – Ventilation</h2>
+            <p class="text-stone-400 text-xs mb-3">Varberg · 2024</p>
+            <p class="text-stone-600 text-sm leading-relaxed">42 ventilationshål (250–400 mm) i armerat betongbjälklag, 5 våningar. GPR-scanning utförd innan varje borrtillfälle. Uppdraget avklarat på 6 arbetsdagar.</p>
+            <div class="mt-4 flex flex-wrap gap-1.5">
+              <span class="bg-stone-100 text-stone-600 text-xs px-2 py-1 font-medium">42 hål</span>
+              <span class="bg-stone-100 text-stone-600 text-xs px-2 py-1 font-medium">250–400 mm</span>
+              <span class="bg-stone-100 text-stone-600 text-xs px-2 py-1 font-medium">Armerad betong</span>
+            </div>
+          </div>
+        </article>
+
+        <article x-show="filter === 'alla' || filter === 'skarning'" class="project-card border border-stone-200 rounded-lg overflow-hidden bg-white">
+          <div class="relative h-52 bg-stone-100 overflow-hidden">
+            <img src="https://placehold.co/800x533/1a1a1a/2563eb?text=Dörröppning+Kungsbacka" alt="Väggskärning dörröppning Kungsbacka" class="w-full h-full object-cover">
+            <div class="overlay absolute inset-0 bg-stone-950/70 flex items-end p-4">
+              <span class="text-blue-400 text-xs font-semibold uppercase tracking-widest">Betongskärning</span>
+            </div>
+          </div>
+          <div class="p-5">
+            <h2 class="font-heading font-bold text-base mb-1 tracking-tight">Bostadsrättsförening – Dörröppning</h2>
+            <p class="text-stone-400 text-xs mb-3">Kungsbacka · 2024</p>
+            <p class="text-stone-600 text-sm leading-relaxed">Väggskärning för ny dörröppning (900×2 100 mm) i 200 mm armerad bärande betongvägg. Konstruktörsgodkänd. Klart på en dag inklusive dammskydd och städning.</p>
+            <div class="mt-4 flex flex-wrap gap-1.5">
+              <span class="bg-stone-100 text-stone-600 text-xs px-2 py-1 font-medium">Bärande vägg</span>
+              <span class="bg-stone-100 text-stone-600 text-xs px-2 py-1 font-medium">200 mm</span>
+              <span class="bg-stone-100 text-stone-600 text-xs px-2 py-1 font-medium">1 dag</span>
+            </div>
+          </div>
+        </article>
+
+        <article x-show="filter === 'alla' || filter === 'vatten'" class="project-card border border-stone-200 rounded-lg overflow-hidden bg-white">
+          <div class="relative h-52 bg-stone-100 overflow-hidden">
+            <img src="https://placehold.co/800x533/0f1923/2563eb?text=Brygga+Varbergs+hamn" alt="Undervattensarbeten brygga Varbergs hamn" class="w-full h-full object-cover">
+            <div class="overlay absolute inset-0 bg-stone-950/70 flex items-end p-4">
+              <span class="text-blue-400 text-xs font-semibold uppercase tracking-widest">Undervattensarbeten</span>
+            </div>
+          </div>
+          <div class="p-5">
+            <h2 class="font-heading font-bold text-base mb-1 tracking-tight">Bryggrenovering – Varbergs hamn</h2>
+            <p class="text-stone-400 text-xs mb-3">Varberg · 2023</p>
+            <p class="text-stone-600 text-sm leading-relaxed">Borrning av 18 ankarbultsuttag (60 mm) i betongpålar under vattenytan, djup 0,5 till 2,5 m. Utfört i samarbete med certifierad dykentreprenör.</p>
+            <div class="mt-4 flex flex-wrap gap-1.5">
+              <span class="bg-stone-100 text-stone-600 text-xs px-2 py-1 font-medium">18 hål</span>
+              <span class="bg-stone-100 text-stone-600 text-xs px-2 py-1 font-medium">60 mm</span>
+              <span class="bg-stone-100 text-stone-600 text-xs px-2 py-1 font-medium">Under vatten</span>
+            </div>
+          </div>
+        </article>
+
+        <article x-show="filter === 'alla' || filter === 'borrning'" class="project-card border border-stone-200 rounded-lg overflow-hidden bg-white">
+          <div class="relative h-52 bg-stone-100 overflow-hidden">
+            <img src="https://placehold.co/800x533/1a1a1a/2563eb?text=Bergvärme+Falkenberg" alt="Bergvärme håltagning Falkenberg villa" class="w-full h-full object-cover">
+            <div class="overlay absolute inset-0 bg-stone-950/70 flex items-end p-4">
+              <span class="text-blue-400 text-xs font-semibold uppercase tracking-widest">Betongborrning</span>
+            </div>
+          </div>
+          <div class="p-5">
+            <h2 class="font-heading font-bold text-base mb-1 tracking-tight">Villa – Bergvärmepump genomföring</h2>
+            <p class="text-stone-400 text-xs mb-3">Falkenberg · 2024</p>
+            <p class="text-stone-600 text-sm leading-relaxed">Två genomföringar (160 mm) i 300 mm grundmur i natursten och betong för bergvärmeledningar. Tätningssystem monterat. Klart på halvdag.</p>
+            <div class="mt-4 flex flex-wrap gap-1.5">
+              <span class="bg-stone-100 text-stone-600 text-xs px-2 py-1 font-medium">Privatperson</span>
+              <span class="bg-stone-100 text-stone-600 text-xs px-2 py-1 font-medium">160 mm</span>
+              <span class="bg-stone-100 text-stone-600 text-xs px-2 py-1 font-medium">Halvdag</span>
+            </div>
+          </div>
+        </article>
+
+        <article x-show="filter === 'alla' || filter === 'rivning'" class="project-card border border-stone-200 rounded-lg overflow-hidden bg-white">
+          <div class="relative h-52 bg-stone-100 overflow-hidden">
+            <img src="https://placehold.co/800x533/1a1a1a/2563eb?text=Golvrivning+Halmstad" alt="Kontrollerad betongrivning industrilokal Halmstad" class="w-full h-full object-cover">
+            <div class="overlay absolute inset-0 bg-stone-950/70 flex items-end p-4">
+              <span class="text-blue-400 text-xs font-semibold uppercase tracking-widest">Rivning</span>
+            </div>
+          </div>
+          <div class="p-5">
+            <h2 class="font-heading font-bold text-base mb-1 tracking-tight">Industrilokal – Golvrivning</h2>
+            <p class="text-stone-400 text-xs mb-3">Halmstad · 2023</p>
+            <p class="text-stone-600 text-sm leading-relaxed">Selektiv rivning av 180 m² betongbeläggning (150 mm tjockt) för installation av nytt avloppssystem. Borttransport av betongmassa ingick.</p>
+            <div class="mt-4 flex flex-wrap gap-1.5">
+              <span class="bg-stone-100 text-stone-600 text-xs px-2 py-1 font-medium">180 m²</span>
+              <span class="bg-stone-100 text-stone-600 text-xs px-2 py-1 font-medium">150 mm</span>
+              <span class="bg-stone-100 text-stone-600 text-xs px-2 py-1 font-medium">Industri</span>
+            </div>
+          </div>
+        </article>
+
+        <article x-show="filter === 'alla' || filter === 'skarning'" class="project-card border border-stone-200 rounded-lg overflow-hidden bg-white">
+          <div class="relative h-52 bg-stone-100 overflow-hidden">
+            <img src="images/concrete-detail.jpg" alt="Trapputtag betongskärning Göteborg" class="w-full h-full object-cover">
+            <div class="overlay absolute inset-0 bg-stone-950/70 flex items-end p-4">
+              <span class="text-blue-400 text-xs font-semibold uppercase tracking-widest">Betongskärning</span>
+            </div>
+          </div>
+          <div class="p-5">
+            <h2 class="font-heading font-bold text-base mb-1 tracking-tight">Bostadshus – Trapphusöppning</h2>
+            <p class="text-stone-400 text-xs mb-3">Göteborg · 2024</p>
+            <p class="text-stone-600 text-sm leading-relaxed">Uttag för ny trappa (2,4 × 1,2 m) i 220 mm armerat betongbjälklag. Skärning uppifrån med väggsåg. Precist resultat utan sprickbildning i omgivande konstruktion.</p>
+            <div class="mt-4 flex flex-wrap gap-1.5">
+              <span class="bg-stone-100 text-stone-600 text-xs px-2 py-1 font-medium">2,4 × 1,2 m</span>
+              <span class="bg-stone-100 text-stone-600 text-xs px-2 py-1 font-medium">220 mm</span>
+              <span class="bg-stone-100 text-stone-600 text-xs px-2 py-1 font-medium">Bostadshus</span>
+            </div>
+          </div>
+        </article>
+
+        <article x-show="filter === 'alla' || filter === 'borrning'" class="project-card border border-stone-200 rounded-lg overflow-hidden bg-white">
+          <div class="relative h-52 bg-stone-100 overflow-hidden">
+            <img src="https://placehold.co/800x533/1a1a1a/2563eb?text=Skolfastighet+Varberg" alt="Håltagning skolfastighet Varberg" class="w-full h-full object-cover">
+            <div class="overlay absolute inset-0 bg-stone-950/70 flex items-end p-4">
+              <span class="text-blue-400 text-xs font-semibold uppercase tracking-widest">Betongborrning</span>
+            </div>
+          </div>
+          <div class="p-5">
+            <h2 class="font-heading font-bold text-base mb-1 tracking-tight">Skolfastighet – El-uppgradering</h2>
+            <p class="text-stone-400 text-xs mb-3">Varberg · 2024</p>
+            <p class="text-stone-600 text-sm leading-relaxed">86 kabelgenomföringar (32 till 110 mm) i betongväggar och bjälklag. Utfört på helger för att undvika störning av skolverksamheten.</p>
+            <div class="mt-4 flex flex-wrap gap-1.5">
+              <span class="bg-stone-100 text-stone-600 text-xs px-2 py-1 font-medium">86 hål</span>
+              <span class="bg-stone-100 text-stone-600 text-xs px-2 py-1 font-medium">Offentlig</span>
+              <span class="bg-stone-100 text-stone-600 text-xs px-2 py-1 font-medium">Helgarbete</span>
+            </div>
+          </div>
+        </article>
+
+        <article x-show="filter === 'alla' || filter === 'borrning'" class="project-card border border-stone-200 rounded-lg overflow-hidden bg-white">
+          <div class="relative h-52 bg-stone-100 overflow-hidden">
+            <img src="https://placehold.co/800x533/1a1a1a/2563eb?text=Pool+Villa+Varberg" alt="Pool håltagning villa Varberg" class="w-full h-full object-cover">
+            <div class="overlay absolute inset-0 bg-stone-950/70 flex items-end p-4">
+              <span class="text-blue-400 text-xs font-semibold uppercase tracking-widest">Håltagning</span>
+            </div>
+          </div>
+          <div class="p-5">
+            <h2 class="font-heading font-bold text-base mb-1 tracking-tight">Villa – Genomföring för pool</h2>
+            <p class="text-stone-400 text-xs mb-3">Varberg · 2025</p>
+            <p class="text-stone-600 text-sm leading-relaxed">Genomföring (200 mm) i källarvägg för poolledningar och el. Tätning med vattentätt genomföringssystem. Löst på en halv förmiddag.</p>
+            <div class="mt-4 flex flex-wrap gap-1.5">
+              <span class="bg-stone-100 text-stone-600 text-xs px-2 py-1 font-medium">Privatperson</span>
+              <span class="bg-stone-100 text-stone-600 text-xs px-2 py-1 font-medium">200 mm</span>
+              <span class="bg-stone-100 text-stone-600 text-xs px-2 py-1 font-medium">Vattentät</span>
+            </div>
+          </div>
+        </article>
+
+        <article x-show="filter === 'alla' || filter === 'vatten'" class="project-card border border-stone-200 rounded-lg overflow-hidden bg-white">
+          <div class="relative h-52 bg-stone-100 overflow-hidden">
+            <img src="https://placehold.co/800x533/0f1923/2563eb?text=Damm+Laholm" alt="Dammgenomföring betongborrning Laholm" class="w-full h-full object-cover">
+            <div class="overlay absolute inset-0 bg-stone-950/70 flex items-end p-4">
+              <span class="text-blue-400 text-xs font-semibold uppercase tracking-widest">Undervattensarbeten</span>
+            </div>
+          </div>
+          <div class="p-5">
+            <h2 class="font-heading font-bold text-base mb-1 tracking-tight">Damm – Vattenreglering genomföring</h2>
+            <p class="text-stone-400 text-xs mb-3">Laholm · 2023</p>
+            <p class="text-stone-600 text-sm leading-relaxed">Borrning av 400 mm genomföring i äldre betongdamm för nytt regleringssystem. Nollserie i armering fastställd via GPR-scanning.</p>
+            <div class="mt-4 flex flex-wrap gap-1.5">
+              <span class="bg-stone-100 text-stone-600 text-xs px-2 py-1 font-medium">400 mm</span>
+              <span class="bg-stone-100 text-stone-600 text-xs px-2 py-1 font-medium">Infrastruktur</span>
+              <span class="bg-stone-100 text-stone-600 text-xs px-2 py-1 font-medium">GPR inkl.</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </div>
+
+  <section class="py-16 px-5 bg-stone-950 border-t border-stone-800 text-center">
+    <div class="max-w-xl mx-auto">
+      <h2 class="font-heading text-3xl font-black text-white mb-3 tracking-tight">Ditt projekt är nästa</h2>
+      <p class="text-stone-400 text-sm mb-8">Kontakta oss för en kostnadsfri offert. Vi återkommer inom 2 timmar under vardagar.</p>
+      <a href="kontakt.html" class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white px-7 py-3.5 rounded font-semibold transition-colors">
+        Begär offert <i class="ph-bold ph-arrow-right text-xs"></i>
+      </a>
+    </div>
+  </section>
+
+  <footer class="bg-stone-950 text-stone-400 pt-16 pb-8 px-5 border-t border-stone-800">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+      <div class="lg:col-span-2">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="w-8 h-8 bg-blue-600 rounded flex items-center justify-center flex-shrink-0">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <span class="text-white font-heading font-bold tracking-tight">Varbergs Betongborrning AB</span>
+        </div>
+        <p class="text-sm leading-relaxed max-w-xs text-stone-500">Certifierade specialister på betongborrning, betongskärning och håltagning. Verksamma i Varberg och hela Halland sedan 2008.</p>
+      </div>
+      <div>
+        <h3 class="text-white text-xs font-semibold uppercase tracking-widest mb-4">Tjänster</h3>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="tjanster.html#borrning" class="hover:text-blue-400 transition-colors">Betongborrning</a></li>
+          <li><a href="tjanster.html#skarning" class="hover:text-blue-400 transition-colors">Betongskärning</a></li>
+          <li><a href="tjanster.html#halttagning" class="hover:text-blue-400 transition-colors">Håltagning</a></li>
+          <li><a href="tjanster.html#rivning" class="hover:text-blue-400 transition-colors">Rivning</a></li>
+          <li><a href="tjanster.html#scanning" class="hover:text-blue-400 transition-colors">GPR-scanning</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-white text-xs font-semibold uppercase tracking-widest mb-4">Kontakt</h3>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="tel:034012345" class="hover:text-blue-400 transition-colors">0340-123 45</a></li>
+          <li><a href="mailto:info@varbergsbetongborrning.se" class="hover:text-blue-400 transition-colors break-all">info@varbergsbetongborrning.se</a></li>
+          <li class="text-stone-600 text-xs leading-relaxed pt-2">Industrivägen 12, 432 44 Varberg<br>Vardagar 07:00 till 17:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto pt-6 border-t border-stone-800 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-stone-600">
+      <p>© 2025 Varbergs Betongborrning AB. Alla rättigheter förbehållna.</p>
+      <p>Org.nr: 556789-1234 · F-skattsedel</p>
+    </div>
+  </footer>
+
+</body>
+</html>
